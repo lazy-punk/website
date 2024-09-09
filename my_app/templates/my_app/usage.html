@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack of All Trades - Usage Examples</title>
+    <link rel="icon" href="{% static 'my_app/images/joft.png' %}">
+    <link rel="stylesheet" href="{% static 'my_app/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="header-buttons">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'licenses' %}">Features</a></li>
+                <li><a href="{% url 'installation' %}">Installation</a></li>
+                <li><a href="{% url 'usage' %}">Usage Example</a></li>
+                <li><a href="{% url 'contributing' %}">Contributing</a></li>
+                <li><a href="{% url 'licenses' %}">License</a></li>
+                <li><a href="{% url 'contact' %}">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="usage" style="margin-bottom: 100px;">
+            <h2>Usage Example (Linear Regression)</h2>
+            <p>Here's a quick example demonstrating how to use jackofalltrades for linear regression:</p>
+            <pre><code>
+                    import jackofalltrades
+                    from jackofalltrades.datasets import get_data
+
+                    # Load data and split into training and testing sets
+                    ldset = get_dataset()
+                    X, y = ldset.get_btc()
+
+                    # Train a linear regression model
+                    model = jackofalltrades.Models.LinearRegression(X, y)
+                    model.fit()
+
+                    # Make predictions and evaluate performance
+                    y_predicted = model.predict(X)
+                    model.evaluate(y, y_predicted)
+            </code></pre>
+
+            <h2>Usage Example (Logistic Regression)</h2>
+            <p>Here's a quick example demonstrating how to use jackofalltrades for logistic regression:</p>
+            <pre><code>import jackofalltrades
+from sklearn.datasets import load_breast_cancer
+
+# Load the breast cancer dataset
+data = load_breast_cancer()
+
+# Extract features (X) and target variable (y)
+X = data.data
+y = data.target
+ldset = get_dataset()
+
+# Train a logistic regression model
+model = jackofalltrades.Models.LogisticRegression(X, y)
+model.fit()
+
+# Make predictions and evaluate performance
+y_predicted = model.predict(X)
+model.evaluate(y, y_predicted)</code></pre>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Jack of All Trades. All rights reserved.</p>
+    </footer>
+</body>
+</html>

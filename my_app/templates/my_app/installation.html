@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack of All Trades - Installation</title>
+    <link rel="icon" href="{% static 'my_app/images/joft.png' %}">
+    <link rel="stylesheet" href="{% static 'my_app/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="header-buttons">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'licenses' %}">Features</a></li>
+                <li><a href="{% url 'installation' %}">Installation</a></li>
+                <li><a href="{% url 'usage' %}">Usage Example</a></li>
+                <li><a href="{% url 'contributing' %}">Contributing</a></li>
+                <li><a href="{% url 'licenses' %}">License</a></li>
+                <li><a href="{% url 'contact' %}">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="installation" style="margin-bottom: 100px;">
+            <h2>Installation</h2>
+            <p>Install jackofalltrades using pip:</p>
+            <pre><code>pip install jackofalltrades</code></pre>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Jack of All Trades. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'my_app/css/styles1.css' %}">
+    <title>Success Page</title>
+</head>
+<body>
+<h1>Form Submitted Successfully</h1>
+<p>Thank you for your submission!</p>
+<a href="{% url 'contact' %}">Go back to the form</a>
+</body>
+</html>

@@ -1,0 +1,8 @@
+django-venv/
+__pycache__/
+/.idea/django-project.iml
+.idea/
+db.sqlite3
+key.txt
+.env
+django/

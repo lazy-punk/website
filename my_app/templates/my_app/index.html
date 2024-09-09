@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack of All Trades - Home</title>
+    <link rel="icon" href="{% static 'my_app/images/joft.png' %}">
+    <link rel="stylesheet" href="{% static 'my_app/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="header-buttons">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'licenses' %}">Features</a></li>
+                <li><a href="{% url 'installation' %}">Installation</a></li>
+                <li><a href="{% url 'usage' %}">Usage Example</a></li>
+                <li><a href="{% url 'contributing' %}">Contributing</a></li>
+                <li><a href="{% url 'licenses' %}">License</a></li>
+                <li><a href="{% url 'contact' %}">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" style="margin-bottom: 100px;">
+            <h1>Jack of All Trades: A Simple and User-Friendly Machine Learning Toolkit</h1>
+            <p>Tired of complex machine learning libraries? Introducing <strong>jackofalltrades</strong>, a streamlined Python package designed to make machine learning accessible for everyone.</p>
+            <p>Whether you're a beginner eager to learn the fundamentals, an experienced user seeking a simpler alternative for quick experimentation, or an educator looking for a user-friendly teaching tool, jackofalltrades is here to empower you.</p>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Jack of All Trades. All rights reserved.</p>
+    </footer>
+</body>
+</html>

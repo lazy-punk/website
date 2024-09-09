@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack of All Trades - Features</title>
+    <link rel="icon" href="{% static 'my_app/images/joft.png' %}">
+    <link rel="stylesheet" href="{% static 'my_app/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="header-buttons">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'licenses' %}">Features</a></li>
+                <li><a href="{% url 'installation' %}">Installation</a></li>
+                <li><a href="{% url 'usage' %}">Usage Example</a></li>
+                <li><a href="{% url 'contributing' %}">Contributing</a></li>
+                <li><a href="{% url 'licenses' %}">License</a></li>
+                <li><a href="{% url 'contact' %}">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="features" style="margin-bottom: 100px;">
+            <h2>New Features</h2>
+            <ul>
+                <li><strong>Enhanced Simplicity:</strong> Even more intuitive functions with added examples and documentation.</li>
+                <li><strong>Extended Algorithm Support:</strong> Now includes support for decision trees, k-means clustering, and more.</li>
+                <li><strong>Improved Performance:</strong> Optimized implementations for faster model training and prediction.</li>
+                <li><strong>Expanded Compatibility:</strong> Better integration with pandas and NumPy for seamless data manipulation.</li>
+                <li><strong>User Feedback:</strong> Gathered user feedback to continuously improve usability and feature set.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Jack of All Trades. All rights reserved.</p>
+    </footer>
+</body>
+</html>
