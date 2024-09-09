@@ -1,4 +1,4 @@
-﻿Django>=4.2.16
-psycopg2==2.9.9
-python-dotenv==1.0.1
-sqlparse==0.5.0
+﻿Django
+psycopg2
+python-dotenv
+sqlparse
